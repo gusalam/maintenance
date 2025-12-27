@@ -1,4 +1,4 @@
-import { Settings, Mail, Phone, MessageCircle, Terminal } from 'lucide-react';
+import { Settings, Mail, MessageCircle, Terminal, ExternalLink } from 'lucide-react';
 
 const MaintenanceCard = () => {
   return (
@@ -67,22 +67,29 @@ const MaintenanceCard = () => {
             <ContactButton 
               icon={<Mail className="w-5 h-5" />}
               label="Email"
-              value="developer@system.id"
-              href="mailto:developer@system.id"
-            />
-            <ContactButton 
-              icon={<Phone className="w-5 h-5" />}
-              label="Phone"
-              value="+62 812 3456 7890"
-              href="tel:+6281234567890"
+              value="fikihcullez17@gmail.com"
+              href="mailto:fikihcullez17@gmail.com"
             />
             <ContactButton 
               icon={<MessageCircle className="w-5 h-5" />}
               label="WhatsApp"
               value="Chat via WhatsApp"
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/087862983339"
             />
           </div>
+
+          {/* Development Button */}
+          <a
+            href="https://tretandevelopment.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center justify-center gap-3 mt-6 p-4 rounded-lg bg-primary/20 border border-primary/40 hover:border-primary hover:bg-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--matrix-green)/0.5)]"
+          >
+            <ExternalLink className="w-5 h-5 text-primary group-hover:text-glow" />
+            <span className="text-primary font-semibold text-glow group-hover:text-glow-strong">
+              Development
+            </span>
+          </a>
         </div>
 
         {/* Footer */}
