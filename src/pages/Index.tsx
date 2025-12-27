@@ -1,6 +1,6 @@
 import MatrixRain from '@/components/MatrixRain';
 import MaintenanceCard from '@/components/MaintenanceCard';
-import MusicNotification from '@/components/MusicNotification';
+import BackgroundAudio from '@/components/BackgroundAudio';
 
 const Index = () => {
   return (
@@ -31,8 +31,8 @@ const Index = () => {
         <MaintenanceCard />
       </main>
 
-      {/* Material You Music Notification */}
-      <MusicNotification />
+      {/* Hidden background audio - autoplay */}
+      <BackgroundAudio />
 
       {/* Scanlines overlay for CRT effect */}
       <div 
